@@ -115,6 +115,7 @@ code {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
+ 
   /* margin: 60px 140px 0px 140px; */
  
 }
@@ -163,8 +164,8 @@ cursor: pointer;
 .hero-products .imgs img {
   -webkit-animation: mover 2s infinite  alternate;
   animation: mover 2s infinite  alternate;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   object-fit: contain;
 }
 
