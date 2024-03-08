@@ -165,7 +165,7 @@ cursor: pointer;
   -webkit-animation: mover 2s infinite  alternate;
   animation: mover 2s infinite  alternate;
   width: 500px;
-  height: 500px;
+  height: 550px;
   object-fit: contain;
 }
 
