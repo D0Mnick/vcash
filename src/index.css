@@ -289,4 +289,98 @@ font-weight: 700;
 
 }
 
+/* for phone */
+@media screen and (max-width:640px) {
+  .hero-products .hero h1{
+
+    font-size: 40px;
+  }
+
+}
+
 /*media queries  end*/
+
+/* about us start */
+.aboutcontainer{
+  background-image: url('./assets/background.png'); /* Path to your background image */
+  background-size: cover; /* Adjust as needed */
+  width: auto;
+  height: 600px;
+  margin-top: 220px;
+}
+
+.aboutdetails{
+  display: flex;
+  justify-content: space-evenly;
+}
+.aboutdetails img{
+  width: 700px;
+  height: 700px;
+  object-fit: contain;
+}
+
+.aboutinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content:center;
+}
+
+.aboutinfo h3{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+
+.aboutinfo p {
+  font-weight: 400;
+  color: #63666A;
+  line-height: 40px;
+  width: 500px;
+  margin-bottom: 70px;
+}
+
+/* MEDIA QUERIES START */
+
+/* MEDIA QUERIES END*/
+@media screen and (max-width:769px) {
+  .aboutcontainer{
+    background-image: url('./assets/background.png'); /* Path to your background image */
+    background-size: cover; /* Adjust as needed */
+    width: auto;
+    height: 900px;
+    
+  }
+  
+  .aboutdetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .aboutdetails img{
+    width: 570px;
+    height:570px;
+    object-fit: contain;
+    margin-bottom: -80px;
+  }
+  
+  .aboutinfo{
+    vertical-align: text-top;
+  }
+  .aboutinfo h3{
+    font-size: 37px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .aboutinfo p {
+   text-align: center;
+   color: black;
+
+  }
+  .unknown{
+    margin-bottom: 100px;
+  }
+  
+}
+/* about us end */
