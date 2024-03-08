@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,172 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* NAV START */
+.navlogo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: #1b2430; */
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.navlogo img{
+  height: 70px;
+  width: 70px;
+}
+
+#navmenu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navmenu li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navmenu li{
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+  transition:0.3s ease-in-out ;
+  cursor: pointer;
+}
+
+#navmenu li:hover,
+#navmenu li.active{
+  color: #17cf97;
+}
+
+#navmenu li:hover::after,
+#navmenu li.active::after{
+   content: "";
+   width: 30%;
+   height: 2px;
+   background: #17cf97;
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
+}
+
+.navmobile{
+  display: none;
+}
+
+/* NAV END */
+
+/* MEADIA QUERIES START */
+@media screen and (max-width:769px) {
+  #navmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top:110px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    /* background: #2a3239; */
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+  }
+  #navmenu.active{
+    right: 0px;
+  }
+
+  #navmenu li{
+    margin-bottom: 25px;
+  }
+   
+  .navmobile{
+    display: block;
+  }
+
+}
+
+/* MEADIA QUERIES END */
+
+/* HERO START */
+
+.hero-products{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  /* margin: 60px 140px 0px 140px; */
+ 
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.hero-products .hero h1{
+  color: black;
+  font-size: 70px;
+  width: 600px;
+}
+
+.hero-products .hero p {
+  font-weight: 100;
+  font-size: 20px;
+  color: grey;
+}
+.hero-products .hero h4{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
+  font-weight: 300;
+}
+.hero-products .hero button {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 250px;
+  height: 40px;
+  background:white;
+  color: black ;;
+cursor: pointer;
+}
+
+.hero-products .hero button:hover{
+  background-color: #17cf97;
+  color: aliceblue;
+}
+
+/* ANIMATIOM IMAGE */
+.hero-products .imgs img {
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* HERO END */
+
