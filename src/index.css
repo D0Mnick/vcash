@@ -123,8 +123,9 @@ code {
 .hero{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 400px;
+  margin-top: 60px;
 }
 
 .hero-products .hero h1{
@@ -153,6 +154,7 @@ code {
   background:white;
   color: black ;;
 cursor: pointer;
+margin-top: 30px;
 }
 
 .hero-products .hero button:hover{
@@ -161,12 +163,32 @@ cursor: pointer;
 }
 
 /* ANIMATIOM IMAGE */
-.hero-products .imgs img {
+
+.imgs {
+  position: relative;
+  width: 500px; /* adjust as needed */
+  height: 300px; /* adjust as needed */
+}
+ .background-image {
+  position: absolute;
+  top: 20px;
+  right:10px;
+  width: 150%;
+  height: 150%;
+  z-index: 1; /* lower z-index to place it behind */
+  /* background-image: url('VC@2X.jpg'); path to background image */
+  background-size: cover; /* adjust as needed */
+}
+
+.hero-products .imgs .foreground-image {
   -webkit-animation: mover 2s infinite  alternate;
   animation: mover 2s infinite  alternate;
   width: 500px;
   height: 550px;
   object-fit: contain;
+  position: absolute;
+ 
+  z-index: 2; /* higher z-index to place it in front */
 }
 
 @-webkit-keyframes mover {

@@ -1,4 +1,5 @@
 import vcash from '../assets/Mobile.png'
+import vc from '../assets/VC@2x.png'
 
 function Hero() {
   return (
@@ -13,7 +14,9 @@ function Hero() {
         </div>
         <div className="imgs" data-aos="fade-left">
        
-          <img src={vcash} alt="/" />
+        <img className="background-image" src={vc} alt=""></img>
+          <img src={vcash} alt="/" className='foreground-image' />
+         
     
         </div>
         
