@@ -88,7 +88,7 @@ code {
     right: -300px;
     width: 300px;
     height: 100vh;
-    /* background: #2a3239; */
+    background: white;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
@@ -147,19 +147,22 @@ code {
 }
 .hero-products .hero button {
   padding: 10px;
-  border: 1px solid grey;
+  border: 1px solid black;
   border-radius: 10px;
   width: 250px;
   height: 40px;
-  background:white;
-  color: black ;;
+  background-color: #17cf97;
+  color: aliceblue;
 cursor: pointer;
 margin-top: 30px;
+font-weight: 700;
+
 }
 
 .hero-products .hero button:hover{
-  background-color: #17cf97;
-  color: aliceblue;
+  
+  background:white;
+  color: black ;;
 }
 
 /* ANIMATIOM IMAGE */
@@ -171,7 +174,7 @@ margin-top: 30px;
 }
  .background-image {
   position: absolute;
-  top: 20px;
+  top: 60px;
   right:10px;
   width: 150%;
   height: 150%;
@@ -202,3 +205,88 @@ margin-top: 30px;
 
 /* HERO END */
 
+/*media queries  start*/
+@media screen and (max-width:769px) {
+ 
+  .hero-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 60px 140px 0px 140px; */
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+  }
+  .hero-products .hero h1{
+    text-align: center;
+    font-size: 50px;
+  }
+  .hero-products .hero p {
+   text-align: center;
+  }
+  .hero-products .hero h4{
+   text-align: center;
+  }
+  .hero-products .hero button {
+    padding: 10px;
+    background-color: #17cf97;
+    color: aliceblue;
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .hero-products .hero button:hover{
+
+    background:white;
+    color: black ;;
+  }
+
+  /* images */
+  .imgs {
+    position: relative;
+    width: 500px; /* adjust as needed */
+    height: 300px; /* adjust as needed */
+    margin-top: 50px;
+  }
+   .background-image {
+    position: absolute;
+    top: 85px;
+    right:10px;
+    width: 120%;
+    height: 130%;
+    z-index: 1; /* lower z-index to place it behind */
+    /* background-image: url('VC@2X.jpg'); path to background image */
+    background-size: cover; /* adjust as needed */
+  }
+  
+  .hero-products .imgs .foreground-image {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+    width: 450px;
+    height: 500px;
+    object-fit: contain;
+    position: absolute;
+   
+    left: 20px;
+   align-items: center;
+    z-index: 2; /* higher z-index to place it in front */
+  }
+  
+  @-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  @keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+
+}
+
+/*media queries  end*/

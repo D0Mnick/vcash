@@ -25,7 +25,7 @@ function Nav() {
         </div>
             <div onClick={handleNav} className="navmobile">
 
-            {!nav ?  <FaTimes style={{color:'black'}}/> : <TiThMenuOutline  style={{color:'black'}}/>}
+            {!nav ?  <FaTimes style={{color:'#17cf97', fontSize: '25px'}} /> : <TiThMenuOutline  style={{color:' #17cf97' , fontSize: '25px'}}/>}
 
 
             
