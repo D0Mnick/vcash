@@ -145,11 +145,16 @@ code {
   margin-top: 10px;
   font-weight: 300;
 }
-.hero-products .hero button {
+
+.herobutton{
+  display: flex;
+  justify-content: space-between;
+}
+.hero-products .hero .herobutton .herofeautures {
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
-  width: 250px;
+  width: 180px;
   height: 40px;
   background-color: #17cf97;
   color: aliceblue;
@@ -158,12 +163,207 @@ margin-top: 30px;
 font-weight: 700;
 
 }
-
-.hero-products .hero button:hover{
+.hero-products .hero .herofeautures:hover{
   
   background:white;
   color: black ;;
 }
+
+/* MODAL FEATURES START */
+.features {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.modal-features {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 900px;
+  height: 550px;
+  position: relative;
+  border-radius:40px ;
+}
+
+.modal-features img{
+  width: 850px;
+  height: 500px;
+  object-fit: contain;
+  
+}
+.modal-features  .close {
+  position: absolute;
+  top: 490px;
+  right: 380px;
+  padding: 10px 30px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 10px;
+  background: grey;
+  color: #02553c;;
+}
+
+/* MODAL FUTURES eND */
+
+
+
+.hero-products .hero .herobutton .heroinquiry {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 180px;
+  height: 40px;
+  background-color: #17cf97;
+  color: aliceblue;
+cursor: pointer;
+margin-top: 30px;
+font-weight: 700;
+
+}
+.hero-products .hero .heroinquiry:hover{
+  
+  background:white;
+  color: black ;;
+}
+
+
+/* MODAL INQUIRY START */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 900px;
+  height: 420px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.popupinquiry{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupinquiry h2{
+  font-size: 27px;
+  color: green;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.popupinquiry img{
+  width: 850px;
+  height: 500px;
+  object-fit: contain;
+  
+}
+.popupinquiry .close {
+  position: absolute;
+  top: 430px;
+  right: 380px;
+  padding: 10px 30px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 10px;
+  background: white;
+  color: gray;
+}
+
+.penbox{
+  display: flex;
+  margin-top: 25px;
+}
+.penbox img {
+  width: 13px;
+  height: 13px;
+}
+
+.penbox h5{
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+.popupinquiry textarea{
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+.infosend{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.infosend h6{
+  font-weight: 300;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+.infosend input {
+  width: 150%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.infosend button{
+  border: none;
+  cursor: pointer;
+
+  margin-top:10px;
+
+}
+
+.infosend img{
+  width: 18px;
+  height: 18px;
+
+}
+
+
+.modal-content h3{
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  margin-top: 20px;
+ 
+}
+
+/* MODAL INQUIRY START */
+
+
+
+
+
+
+
+
 
 /* ANIMATIOM IMAGE */
 
@@ -295,6 +495,8 @@ font-weight: 700;
 
     font-size: 40px;
   }
+
+  @media screen and (max-width: 496px){}
 
 }
 
