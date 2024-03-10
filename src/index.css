@@ -1,13 +1,13 @@
-/* body {
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont,  'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: 'Roboto';
+  
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
@@ -48,10 +48,14 @@ code {
 #navmenu li{
   text-decoration: none;
   font-size: 1.3rem;
-  font-weight: 600;
+
   color: black;
   transition:0.3s ease-in-out ;
   cursor: pointer;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 #navmenu li:hover,
@@ -132,18 +136,26 @@ code {
   color: black;
   font-size: 70px;
   width: 600px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero-products .hero p {
   font-weight: 100;
   font-size: 20px;
   color: grey;
+  
 }
 .hero-products .hero h4{
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+
   margin-top: 10px;
   font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
 }
 
 .herobutton{
@@ -151,22 +163,26 @@ code {
   justify-content: space-between;
 }
 .hero-products .hero .herobutton .herofeautures {
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 180px;
-  height: 40px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
   background-color: #17cf97;
   color: aliceblue;
-cursor: pointer;
-margin-top: 30px;
-font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  outline: none;
+  border: none;
+  font-size: 15px;
 
 }
 .hero-products .hero .herofeautures:hover{
   
   background:white;
   color: black ;;
+  border: gray 1px solid;
 }
 
 /* MODAL FEATURES START */
@@ -202,13 +218,26 @@ font-weight: 700;
 .modal-features  .close {
   position: absolute;
   top: 490px;
-  right: 380px;
-  padding: 10px 30px;
+  right: 350px;
+  padding: 15px 25px;
   cursor: pointer;
   z-index: 1;
-  border-radius: 10px;
-  background: grey;
-  color: #02553c;;
+  border-radius: 20px;
+ color: white;
+  background: #02553c;
+  width: 200px;
+  font-weight: 900;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.modal-features  .close:hover{
+  background: white;
+  color: #02553c;
+  border: 1px solid gray;
 }
 
 /* MODAL FUTURES eND */
@@ -216,20 +245,23 @@ font-weight: 700;
 
 
 .hero-products .hero .herobutton .heroinquiry {
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 180px;
-  height: 40px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
   background-color: #17cf97;
   color: aliceblue;
-cursor: pointer;
-margin-top: 30px;
-font-weight: 700;
-
+  cursor: pointer;
+  margin-top: 30px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-left: 10px;
 }
 .hero-products .hero .heroinquiry:hover{
-  
+  border: 1px solid gray;
   background:white;
   color: black ;;
 }
@@ -275,6 +307,9 @@ font-weight: 700;
   font-size: 27px;
   color: green;
   font-family: 'Times New Roman', Times, serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .popupinquiry img{
@@ -284,7 +319,7 @@ font-weight: 700;
   
 }
 .popupinquiry .close {
-  position: absolute;
+  /* position: absolute;
   top: 430px;
   right: 380px;
   padding: 10px 30px;
@@ -292,7 +327,29 @@ font-weight: 700;
   z-index: 1;
   border-radius: 10px;
   background: white;
-  color: gray;
+  color: gray; */
+
+  position: absolute;
+  top: 450px;
+  right: 350px;
+  padding: 15px 25px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 20px;
+ color: white;
+  background: #02553c;
+  width: 200px;
+  font-weight: 900;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+.popupinquiry .close:hover{
+  background: white;
+  color: #02553c;
+  border: 1px solid gray;
 }
 
 .penbox{
@@ -526,21 +583,116 @@ font-weight: 700;
   flex-direction: column;
   align-items: left;
   justify-content:center;
+  margin-bottom: 90px;
 }
 
 .aboutinfo h3{
   font-size: 40px;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
-.aboutinfo p {
+.aboutinfo p{
   font-weight: 400;
   color: #63666A;
-  line-height: 40px;
+  line-height: 35px;
   width: 500px;
-  margin-bottom: 70px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
 }
+
+.aboutinfo button{
+  width: 200px;
+  padding: 15px 25px;
+  align-self: flex-end;
+  border-radius: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  font-weight: 700;
+  color: #63666A;
+  margin-bottom: 70px;
+  outline: none;
+  margin-right: 60px;
+  border: none;
+  font-size: 15px;
+}
+/* 
+MODAL START */
+.container-about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.modal-about{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 900px;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+}
+
+/* .modal-about h4{
+font-family: 'Times New Roman', Times, serif;
+color: green;
+font-weight: 600;
+} */
+
+
+
+ .close {
+  position: absolute;
+  top: 450px;
+  right: 380px;
+  padding: 10px 50px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 20px;
+  background: white;
+  color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  outline: none;
+  font-weight: 400;
+  font-size: 15px;
+  border: gray 1px solid;
+}
+
+
+/* .about-paragraph{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.about-paragraph p{
+  font-weight: 100;
+  font-size: 15px;
+  margin-top: 20px;
+  color: #1b1b1b;
+
+} */
+/* MODAL END */
 
 /* MEDIA QUERIES START */
 
