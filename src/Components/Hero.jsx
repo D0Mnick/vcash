@@ -29,16 +29,16 @@ function Hero() {
   };
 
   return (
-    <div className="hero-products" data-aos="fade-down">
+    <div className="hero-products" data-aos="fade-down"   data-aos-duration="500">
         <div className="hero"> 
         <div className='power'>
-        <p data-aos="fade-down">Powered By</p>
-        <h1 data-aos="fade-down">Get A Whole New Digital Experience</h1>
-        <h4 data-aos="fade-right">Empower transactions, simply lives</h4>
+        <p data-aos="fade-down"  data-aos-duration="500">Powered By</p>
+        <h1 data-aos="fade-down"  data-aos-duration="500">Get A Whole New Digital Experience</h1>
+        <h4 data-aos="fade-right"  data-aos-duration="500">Empower transactions, simply lives</h4>
         </div>
 
         <div className="herobutton">
-        <button onClick={openModal} className='herofeautures' data-aos="fade-right">See Feautures</button>
+        <button onClick={openModal} className='herofeautures' data-aos="fade-right"  data-aos-duration="500">See Feautures</button>
         {isOpen && (
         <div className="features">
           <div className="modal-features">
@@ -53,7 +53,7 @@ function Hero() {
 
 
         
-        <button onClick={openModals} className='heroinquiry'  data-aos="fade-right">Inquiry</button>
+        <button onClick={openModals} className='heroinquiry'   data-aos="fade-right"  data-aos-duration="600">Inquiry</button>
       {isOpens && (
         <div className="modal">
 
@@ -97,8 +97,17 @@ function Hero() {
         </div>
         <div className="imgs">
        
-        <img data-aos="fade-right" className="background-image " src={vc} alt=""></img>
-          <img src={vcash} alt="/" className='foreground-image' />
+        <img data-aos="fade-right"  data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500"
+
+     data-aos-easing="ease-in-sine" className="background-image " src={vc} alt=""></img>
+
+          <img data-aos="fade-down"  data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500"
+
+          src={vcash} alt="/" className='foreground-image' />
         </div>
       
     </div>
