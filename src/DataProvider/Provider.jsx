@@ -40,8 +40,10 @@ let Vcash = [
     {
         id:6,
         image:img6,
-        name:'Life & Personal Accident Insurance',
-        text:'Protect what matters most. VCash extends life and personal accident insurance coverage to unserved and unbanked populations, offering peace of mind and financial security in uncertain times..'
+        name:'Life & Personal Accident Isurance',
+        text:'Protect what matters most. Vcash extends like and personal accident insurance coverage to unserved and unbanked populations, offering peace of mind and financial security in uncertain times'
     },
+    
+   
 ]
 export default Vcash;

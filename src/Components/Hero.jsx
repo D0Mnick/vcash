@@ -45,7 +45,7 @@ function Hero() {
     
          <img src={features} alt="" />
     
-            <button className="close" onClick={closeModal}>back to home</button>
+            <button className="close" onClick={closeModal}>Back To Home</button>
           </div>
         
         </div>
@@ -79,7 +79,7 @@ function Hero() {
 
            <h3>Important:All information given will be treated with the highest confidentially.It will solely be used for Vcash purposes only.</h3>
 
-           <button className="close" onClick={closeModals}>back to home</button>
+           <button className="close" onClick={closeModals}>Back To Home</button>
            </div>
           </form>
         </div>

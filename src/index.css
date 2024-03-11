@@ -60,7 +60,7 @@ body {
 
 #navmenu li:hover,
 #navmenu li.active{
-  color: #17cf97;
+  color: #448108;
   font-weight: 500;
 }
 
@@ -69,7 +69,7 @@ body {
    content: "";
    width: 30%;
    height: 2px;
-   background: #17cf97;
+   background: #448108;
    position: absolute;
    bottom: -4px;
    left: 20px;
@@ -140,7 +140,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #17cf97;;
+  color: #448108;;
 }
 
 .hero-products .hero p {
@@ -167,7 +167,7 @@ body {
 .hero-products .hero .herobutton .herofeautures {
   padding: 15px 30px;
   border: none;
-  border-radius: 20px;
+  border-radius: 50px;
   width: 250px;
   background:white;
   border: gray 1px solid;
@@ -183,7 +183,7 @@ body {
 
 }
 .hero-products .hero .herofeautures:hover{
-  background-color: #17cf97;
+  background-color: #448108;
   color: aliceblue;
 
 }
@@ -225,7 +225,7 @@ body {
   padding: 15px 25px;
   cursor: pointer;
   z-index: 1;
-  border-radius: 20px;
+  border-radius: 50px;
  
   width: 200px;
   font-weight: 900;
@@ -242,7 +242,7 @@ body {
 }
 
 .modal-features  .close:hover{
-  background-color: #17cf97;
+  background-color: #448108;
   color: aliceblue;
 }
 
@@ -253,7 +253,7 @@ body {
 .hero-products .hero .herobutton .heroinquiry {
   padding: 15px 30px;
   border: none;
-  border-radius: 20px;
+  border-radius: 50px;
   width: 200px;
   cursor: pointer;
   margin-top: 30px;
@@ -271,7 +271,7 @@ body {
 
 }
 .hero-products .hero .heroinquiry:hover{
-  background-color: #17cf97;
+  background-color: #448108;
   color: aliceblue;
 }
 
@@ -314,7 +314,7 @@ body {
 
 .popupinquiry h2{
   font-size: 27px;
-  color: green;
+  color: #448108;
   font-family: 'Times New Roman', Times, serif;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -344,7 +344,7 @@ body {
   padding: 15px 25px;
   cursor: pointer;
   z-index: 1;
-  border-radius: 20px;
+  border-radius: 50px;
 
   width: 200px;
   font-weight: 900;
@@ -358,7 +358,7 @@ body {
   color: gray ;
 }
 .popupinquiry .close:hover{
-  background-color: #17cf97;
+  background-color: #448108;
   color: aliceblue;
 }
 
@@ -501,7 +501,7 @@ body {
   }
   .hero-products .hero button {
     padding: 10px;
-    background-color: #17cf97;
+    background-color: #448108;
     color: aliceblue;
     width: 200px;
     height: 40px;
@@ -621,7 +621,7 @@ body {
   width: 200px;
   padding: 15px 25px;
   align-self: flex-end;
-  border-radius: 20px;
+  border-radius: 50px;
   cursor: pointer;
   color: #63666A;
   margin-bottom: 60px;
@@ -637,7 +637,7 @@ body {
 }
 .aboutinfo button:hover{
   color: white;
-  background: #17cf97;
+  background: #448108;
 }
 /* 
 MODAL START */
@@ -671,7 +671,7 @@ MODAL START */
 
 .modal-about h2{
 font-family: 'Times New Roman', Times, serif;
-color: green;
+color: #448108;
 font-weight: 900;
 margin-bottom: -50px;
 } 
@@ -685,7 +685,7 @@ margin-bottom: -50px;
   padding: 15px 25px;
   cursor: pointer;
   z-index: 1;
-  border-radius: 20px;
+  border-radius: 50px;
   color: #63666A;
   outline: none;
   font-weight: 400;
@@ -793,7 +793,7 @@ margin-bottom: -50px;
 .item{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 50px;
 }
 .item:hover{
@@ -812,13 +812,13 @@ margin-bottom: -50px;
   width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .info h4{
   font-size: 16px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 color: #42484e;
 font-family: "Roboto", sans-serif;
 font-weight: 600;
@@ -834,7 +834,107 @@ font-style: normal;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
+  margin-top: 10px;
 }
 
 /* SERVICE END*/
 
+/* Contact Us start */
+.contact-container{
+  background-image: url('./assets/bg-contact.png'); /* Path to your background image */
+  background-size: cover; /* Adjust as needed */
+  width: auto;
+  height: 800px;
+ 
+}
+.contact-container .contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact-container .contact h2{
+  margin-top: 200px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 30px;
+}
+
+.contact-container .contact h4{
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  font-size: 20px;
+}
+.contact-container .contact p{
+ color: #fff;
+ font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.contact-container .contact h5{
+  margin-top: 50px;
+  color: #fff;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.contact-container .contact button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  width: 250px;
+  background:white;
+  border: gray 1px solid;
+  color: gray ;;
+  cursor: pointer;
+  margin-top: 30px;
+  outline: none;
+  /* border: none; */
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logoqrx{
+  display: flex;
+  margin-top: 270px;
+}
+
+.contact .logoqrx h3{
+
+ color: #fff;
+font-size: 14px;
+font-family: "Roboto", sans-serif;
+font-weight: 600;
+font-style: normal;
+margin-top: 18px;
+}
+ .contact .logoqrx img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+
+}
+.contact .logoqrx span{
+color: #448108;
+font-size: 14px;
+font-family: "Roboto", sans-serif;
+font-weight: 600;
+font-style: normal;
+margin-top: 18px;
+}
+
+
+
+/* Contact Us end */
