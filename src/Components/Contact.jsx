@@ -4,7 +4,7 @@ import qrx from '../assets/QRX LOGO.png'
 
 function Contact() {
   return (
-    <div className='contact-container'>
+    <div id='contact' className='contact-container'>
         <div className='contact'>
             <h2>Let's Connect!</h2>
             <h4>Get Started Today</h4>

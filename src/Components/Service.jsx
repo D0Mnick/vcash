@@ -4,7 +4,7 @@ import Items from './Items'
 
 function Service() {
   return (
-    <div className='servicecontainer'>
+    <div id='services' className='servicecontainer'>
       <h1>We Provide</h1>
       <div className="service">
         {Vcash.map((item, i) => {

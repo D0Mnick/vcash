@@ -29,7 +29,7 @@ function Hero() {
   };
 
   return (
-    <div className="hero-products" data-aos="fade-down"   data-aos-duration="500">
+    <div id='hero' className="hero-products" data-aos="fade-down"   data-aos-duration="500">
         <div className="hero"> 
         <div className='power'>
         <p data-aos="fade-down"  data-aos-duration="500">Powered By</p>
