@@ -13,7 +13,7 @@ function Contact() {
 
             <button>Send Us A Message</button>
                 <div className='logoqrx'>
-                <span>Vcash 2024 Powerd By</span>
+                <span>Vcash 2024 Powerd By: </span>
                 <img src={qrx} alt="" /> 
                 <h3>The Power To Do More</h3>
             </div>

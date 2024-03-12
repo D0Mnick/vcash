@@ -12,12 +12,12 @@ function Nav() {
     setNav(!nav)
    }
   return (
-    <div id='nav' className='nav'>
+    <div  className='nav'>
         <div className='navlogo'>
-          <Link to='nav' smooth={true} duration={500}> <img src={logo} alt="" /></Link>
-        <div>
-            <ul id='navmenu' className={!nav ? '#navmenu active' : '#navmenu'}>
-            <li className='active'><Link to='hero' smooth={true} duration={500}>HOME</Link></li>
+          <Link to='hero' smooth={true} duration={500}> <img src={logo} alt="" /></Link>
+        <div id='navs'>
+            <ul  id='navmenu'  className={!nav ? '#navmenu active' : '#navmenu'}>
+            <li className='active'><Link to='hero' smooth={true} duration={500}>Home</Link></li>
             <li> <Link to='about' smooth={true} duration={500}>About Us</Link></li>
             <li> <Link to='services' smooth={true} duration={500}>Services</Link></li>
             <li> <Link to='contact' smooth={true} duration={500}>Contact Us</Link></li>

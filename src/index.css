@@ -25,7 +25,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff; /* Set the background to transparent */
+  /* background-color: #fff; */
   z-index: 4;
 
 }
@@ -35,7 +35,8 @@ body {
   justify-content: space-between;
   /* background: #1b2430; */
   padding: 5px 80px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: transparent;
+  cursor: pointer;
 }
 
 .navlogo img{
@@ -66,6 +67,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
+  color: #448108;
 }
 
 #navmenu li:hover,
@@ -150,7 +152,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #448108;;
+  color: #448108;
 }
 
 .hero-products .hero p {
@@ -217,20 +219,20 @@ body {
   padding: 20px;
   border-radius: 5px;
   width: 900px;
-  height: 550px;
+  height: 500px;
   position: relative;
-  border-radius:40px ;
+  border-radius:20px ;
 }
 
 .modal-features img{
   width: 850px;
-  height: 500px;
+  height: 480px;
   object-fit: contain;
   
 }
 .modal-features  .close {
   position: absolute;
-  top: 490px;
+  top: 445px;
   right: 350px;
   padding: 15px 25px;
   cursor: pointer;
@@ -304,16 +306,16 @@ body {
 .modal-content {
   background-color: #fff;
   padding: 20px;
-  border-radius: 5px;
+
   width: 900px;
-  height: 420px;
+  height: 410px;
   position: relative;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 .popupinquiry{
   display: flex;
@@ -586,11 +588,14 @@ body {
   width: auto;
   height: 600px;
   margin-top: 220px;
+  
 }
 
 .aboutdetails{
   display: flex;
   justify-content: space-evenly;
+  margin-left: 150px;
+  margin-right: 250px;
 }
 .aboutdetails img{
   width: 700px;
@@ -667,8 +672,8 @@ MODAL START */
 .modal-about{
   background-color: #fff;
   padding: 20px;
-  border-radius: 5px;
-  width: 900px;
+
+  width: 1100px;
   height: 520px;
   position: relative;
   margin: auto;
@@ -676,7 +681,7 @@ MODAL START */
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .modal-about h2{
@@ -691,7 +696,7 @@ margin-bottom: -50px;
 .modal-about  .close {
   position: absolute;
   top: 465px;
-  right: 280px;
+  right: 380px;
   padding: 15px 25px;
   cursor: pointer;
   z-index: 1;
@@ -714,9 +719,9 @@ margin-bottom: -50px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  line-height: 19px;
+  line-height: 17px;
 
-  margin: 0px 50px;
+  margin: 50px 50px;
 }
 
 .about-paragraph p{
@@ -902,9 +907,9 @@ font-style: normal;
   border: none;
   border-radius: 50px;
   width: 250px;
-  background:white;
+  background-color: rgba(128, 128, 128, 0.5);
   border: gray 1px solid;
-  color: gray ;;
+  color: #fff;
   cursor: pointer;
   margin-top: 30px;
   outline: none;
@@ -913,6 +918,10 @@ font-style: normal;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.contact-container .contact button:hover{
+  background: #448108;
 }
 
 .logoqrx{
@@ -933,7 +942,7 @@ margin-top: 18px;
   width: 50px;
   height: 50px;
   object-fit: contain;
-
+  margin-left:5px ;
 
 }
 .contact .logoqrx span{
@@ -943,6 +952,7 @@ font-family: "Roboto", sans-serif;
 font-weight: 600;
 font-style: normal;
 margin-top: 18px;
+
 }
 
 
