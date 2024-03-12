@@ -69,8 +69,12 @@ body {
   font-style: normal;
   color: #448108;
 }
+#navmenu li:hover {
+  color: #448108;
+  font-weight: 500;
+}
 
-#navmenu li:hover,
+/* #navmenu li:hover,
 #navmenu li.active{
   color: #448108;
   font-weight: 500;
@@ -85,7 +89,7 @@ body {
    position: absolute;
    bottom: -4px;
    left: 20px;
-}
+} */
 
 .navmobile{
   display: none;
@@ -306,7 +310,6 @@ body {
 .modal-content {
   background-color: #fff;
   padding: 20px;
-
   width: 900px;
   height: 410px;
   position: relative;
@@ -368,6 +371,24 @@ body {
   background:white;
   border: gray 1px solid;
   color: gray ;
+}
+
+.popupinquiry .closetext {
+  
+  position: absolute;
+  top: 400px;
+  right: 30px;
+  z-index: 1;
+  border-radius: 50px;
+  width: 820px;
+  font-weight: 900;
+  outline: none;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  
 }
 .popupinquiry .close:hover{
   background-color: #448108;

@@ -29,16 +29,16 @@ function Hero() {
   };
 
   return (
-    <div id='hero' className="hero-products" data-aos="fade-down"   data-aos-duration="500">
+    <div id='hero' className="hero-products" data-aos="fade-down"   data-aos-duration="800">
         <div className="hero"> 
         <div className='power'>
-        <p data-aos="fade-down"  data-aos-duration="500">Powered By</p>
-        <h1 data-aos="fade-down"  data-aos-duration="500">Get A Whole New Digital Experience</h1>
-        <h4 data-aos="fade-right"  data-aos-duration="500">Empower transactions, simply lives</h4>
+        <p data-aos="fade-down"  data-aos-duration="800">Powered By</p>
+        <h1 data-aos="fade-down"  data-aos-duration="800">Get A Whole New Digital Experience</h1>
+        <h4 data-aos="fade-right"  data-aos-duration="800">Empower transactions, simply lives</h4>
         </div>
 
         <div className="herobutton">
-        <button onClick={openModal} className='herofeautures' data-aos="fade-right"  data-aos-duration="500">See Feautures</button>
+        <button onClick={openModal} className='herofeautures' data-aos="fade-right"  data-aos-duration="800">See Features</button>
         {isOpen && (
         <div className="features">
           <div className="modal-features">
@@ -53,7 +53,7 @@ function Hero() {
 
 
         
-        <button onClick={openModals} className='heroinquiry'   data-aos="fade-right"  data-aos-duration="600">Inquiry</button>
+        <button onClick={openModals} className='heroinquiry'   data-aos="fade-right"  data-aos-duration="800">Inquiry</button>
       {isOpens && (
         <div className="modal">
 
@@ -68,7 +68,7 @@ function Hero() {
              </div>
 
             <textarea id="w3review" name="w3review" rows="9" cols="50">
-                        HELLO GOODMORNINGS
+                        
             </textarea>
 
             <div className='infosend'>
@@ -76,21 +76,15 @@ function Hero() {
                 <input type="text" id="E-mail" name="email" />
                 <button><img src={inquiry} alt="" />Send</button>
             </div>
+          
+           <h3 className='closetext'>Important Notice:All information given will be treated with the highest confidentially.It will solely be used for Vcash purposes only.</h3>
 
-           <h3>Important:All information given will be treated with the highest confidentially.It will solely be used for Vcash purposes only.</h3>
-
-           <button className="close" onClick={closeModals}>Back To Home</button>
+           <button className="close" onClick={closeModals}>Close</button>
            </div>
           </form>
         </div>
         
       )}
-  
-
-
-
-
-
 
         </div>
       
@@ -99,13 +93,13 @@ function Hero() {
        
         <img data-aos="fade-right"  data-aos-anchor="#example-anchor"
      data-aos-offset="500"
-     data-aos-duration="500"
+     data-aos-duration="800"
 
      data-aos-easing="ease-in-sine" className="background-image " src={vc} alt=""></img>
 
           <img data-aos="fade-down"  data-aos-anchor="#example-anchor"
      data-aos-offset="500"
-     data-aos-duration="500"
+     data-aos-duration="800"
 
           src={vcash} alt="/" className='foreground-image' />
         </div>
