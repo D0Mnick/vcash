@@ -143,6 +143,7 @@ body {
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
+    
   
   }
 
@@ -880,6 +881,8 @@ background: none;
   height: 300px;
   position: relative;
   border-radius:20px ;
+  margin-right: 275px;
+
 }
 
 .modal-features img{
@@ -947,6 +950,7 @@ background: none;
   border-radius: 20px;
   width: 440px;
   height: 400px;
+  margin-right: 295px;
  
 }
 .popupinquiry{

@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import { TiThMenuOutline } from "react-icons/ti";
 import { FaTimes } from "react-icons/fa";
 import { useState } from 'react';
+import './hero.css'
 
 function Nav() {
   const [nav, setNav] = useState(false)
