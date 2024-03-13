@@ -74,22 +74,6 @@ body {
   font-weight: 500;
 }
 
-/* #navmenu li:hover,
-#navmenu li.active{
-  color: #448108;
-  font-weight: 500;
-}
-
-#navmenu li:hover::after,
-#navmenu li.active::after{
-   content: "";
-   width: 30%;
-   height: 2px;
-   background: #448108;
-   position: absolute;
-   bottom: -4px;
-   left: 20px;
-} */
 
 .navmobile{
   display: none;
@@ -110,7 +94,7 @@ body {
     width: 300px;
     height: 100vh;
     background: white;
-    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
   }
@@ -521,6 +505,15 @@ background: #fff;
 
 /*media queries  start*/
 @media screen and (max-width:769px) {
+  .navmobile{
+    display: block;
+    margin-right:130px ;
+  }
+  #navmenu{
+    margin-right:210px ;
+    right: -600px;
+    margin-top: -20px;
+  }
  
   .hero-products{
     display: flex;

@@ -7,7 +7,7 @@ import { useState } from 'react';
 import './hero.css'
 
 function Nav() {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(true)
 
   const handleNav = () => {
     setNav(!nav)
@@ -17,7 +17,7 @@ function Nav() {
         <div className='navlogo'>
           <Link to='hero' smooth={true} duration={500}> <img src={logo} alt="" /></Link>
         <div id='navs'>
-            <ul  id='navmenu'  className={!nav ? '#navmenu active' : '#navmenu'}>
+            <ul  id='navmenu'  className={!nav ? '#navmenu active' : '#navmenu'}  onClick={() => setNav(false)}>
             <li className='active'><Link to='hero' smooth={true} duration={500}>Home</Link></li>
             <li> <Link to='about' smooth={true} duration={500}>About Us</Link></li>
             <li> <Link to='services' smooth={true} duration={500}>Services</Link></li>

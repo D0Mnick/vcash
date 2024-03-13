@@ -1,72 +1,33 @@
-// import React from 'react'
-// import './Menus.css'
-// import { useState } from "react";
-// import { IoClose, IoMenu } from "react-icons/io5";
+import React from 'react'
+import './Menus.css'
+import logo from '../assets/VCash LOGO.png'
+import { Link } from 'react-scroll'
+import { FaBars } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
+import { useState } from 'react';
 
-// function Menu() {
-//     return (
-//         <header className="header">
-//           <nav className="nav container">
-//             <NavLink to="/" className="nav__logo">
-//               Navigation Bar
-//             </NavLink>
-     
-//             <div
-//               className={"nav__menu"}
-//               id="nav-menu"
-//             >
-//               <ul className="nav__list">
-//                 <li className="nav__item">
-//                   <NavLink to="/" className="nav__link">
-//                     Home
-//                   </NavLink>
-//                 </li>
-//                 <li className="nav__item">
-//                   <NavLink to="/news" className="nav__link">
-//                     News
-//                   </NavLink>
-//                 </li>
-//                 <li className="nav__item">
-//                   <NavLink
-//                     to="/about-us"
-//                     className="nav__link"
-//                   >
-//                     About Us
-//                   </NavLink>
-//                 </li>
-//                 <li className="nav__item">
-//                   <NavLink
-//                     to="/favorite"
-//                     className="nav__link"
-//                   >
-//                     Favorite
-//                   </NavLink>
-//                 </li>
-//                 <li className="nav__item">
-//                   <NavLink
-//                     to="/location"
-//                     className="nav__link"
-//                   >
-//                     Location
-//                   </NavLink>
-//                 </li>
-//                 <li className="nav__item">
-//                   <NavLink to="/get-started" className="nav__link nav__cta">
-//                     Get Started
-//                   </NavLink>
-//                 </li>
-//               </ul>
-//               <div className="nav__close" id="nav-close">
-//                 <IoClose />
-//               </div>
-//             </div>
-     
-//             <div className="nav__toggle" id="nav-toggle">
-//               <IoMenu />
-//             </div>
-//           </nav>
-//         </header>
-//       );
-// }
+function Menu() {
+   const [Mobile, setMobile] = useState(false)
 
-// export default Menu
+  return (
+    <nav className='navbar'>
+      
+          <h3 className='logo'>
+            <img src={logo} alt="" />
+          </h3>
+            <ul className={Mobile ? 'nav-links-mobile' : 'nav-links'} onClick={() => setMobile(true)}>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/'>Home</Link></li>
+            </ul>
+            <button className='mobile-menu-icon' onClick={() => setMobile(!Mobile)}>
+              {Mobile ? <IoClose /> :<FaBars />}
+      
+            </button>
+      
+    </nav>
+  )
+}
+
+export default Menu
