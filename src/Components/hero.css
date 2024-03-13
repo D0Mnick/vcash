@@ -29,7 +29,7 @@
       position: relative;
       border-radius:20px ;
       margin-right: 340px;
-    
+      margin-bottom: 700px;
     }
     
     .modal-features img{
@@ -99,6 +99,7 @@
       width: 360px;
       height: 400px;
       margin-right: 350px;
+      margin-bottom: 700px;
      
     }
     .popupinquiry{
@@ -179,7 +180,7 @@
     .popupinquiry textarea{
       font-family: sans-serif;
       margin-top: 10px;
-      width: 300px;
+      width: 290px;
       height: 120px;
     }
     
