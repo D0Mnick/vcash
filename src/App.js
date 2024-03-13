@@ -5,6 +5,8 @@ import Hero from './Components/Hero';
 import Service from './Components/Service';
 import Contact from './Components/Contact';
 
+
+
 function App() {
   return (
     <div>
@@ -13,6 +15,8 @@ function App() {
       <About />
       <Service />
       <Contact />
+
+     
     </div>
   )
 }
