@@ -505,14 +505,18 @@ background: #fff;
 
 /*media queries  start*/
 @media screen and (max-width:769px) {
+
   .navmobile{
     display: block;
     margin-right:130px ;
   }
   #navmenu{
-    margin-right:210px ;
+    margin-right:150px ;
     right: -600px;
-    margin-top: -20px;
+    margin-top: -25px;
+  }
+  #navmenu li {
+    line-height: 30px;
   }
  
   .hero-products{
@@ -531,7 +535,7 @@ background: #fff;
   }
 .power h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
   }
   .power p {
    text-align: center;
@@ -645,6 +649,8 @@ background: #fff;
   height: 400px;
   position: relative;
   border-radius:20px ;
+  margin-right: 145px;
+  margin-bottom: 350px;
 }
 
 .modal-features img{
@@ -708,6 +714,8 @@ background: #fff;
   border-radius: 20px;
   width: 700px;
   height: 400px;
+  margin-right: 180px;
+  margin-top: 200px;
 }
 .popupinquiry{
   display: flex;
@@ -794,6 +802,7 @@ background: #fff;
 .popupinquiry textarea{
   font-family: sans-serif;
   margin-top: 10px;
+  height: 140px;
 }
 
 .infosend{
@@ -812,6 +821,7 @@ background: #fff;
   width: 150%;
   padding: 8px;
   margin-top: 10px;
+
 }
 .infosend div .message{
 border: none;
@@ -1244,9 +1254,10 @@ margin-bottom: -50px;
     background-image: url('./assets/background.png'); /* Path to your background image */
     background-size: cover; /* Adjust as needed */
     width: auto;
-    height: 900px;
+    height: 1030px;
     
   }
+ 
   
   .aboutdetails{
     display: flex;
@@ -1263,20 +1274,134 @@ margin-bottom: -50px;
   
   .aboutinfo{
     vertical-align: text-top;
+   margin: 0px 0px 10px 105px;
+    
   }
   .aboutinfo h3{
-    font-size: 37px;
+    font-size: 50px;
     font-weight: 600;
     text-align: center;
   }
-  .aboutinfo p {
-   text-align: center;
-   color: black;
-
+  .aboutinfo h4{
+    font-weight: 400;
+    color: #63666A;
+    line-height: 40px;
+    width: 500px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+  
   }
+  
+  .aboutinfo button{
+    width: 200px;
+    padding: 15px 25px;
+    align-self: flex-end;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #63666A;
+    margin-bottom: 60px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background:white;
+    border:#63666A 1px solid;
+    margin-right: 160px;
+    margin-top: 10px;
+  }
+  .aboutinfo button:hover{
+    color: white;
+    background: #448108;
+  }
+ 
+  
   .unknown{
     margin-bottom: 100px;
   }
+
+ /* MODAL START */
+.about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.modal-about{
+  background-color: #fff;
+  padding: 20px;
+  width: 750px;
+  height: 550px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  right:73px;
+  z-index: 5;
+}
+
+.modal-about h2{
+font-family: 'Times New Roman', Times, serif;
+color: #448108;
+font-weight: 900;
+margin-bottom: -50px;
+} 
+
+.modal-about  .close {
+  position: absolute;
+  top: 480px;
+  right: 120px;
+  padding: 15px 25px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50px;
+  color: #63666A;
+  outline: none;
+  font-weight: 400;
+  font-size: 17px;
+  border: gray 1px solid;
+  width: 200px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background:white;
+  border:#63666A 1px solid;
+}
+
+
+.about-paragraph{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 18px;
+  z-index: 5;
+  margin: 50px 50px;
+}
+
+.about-paragraph p{
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #1b1b1b;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+/* MODAL END */
   
 }
 /* about us end */
@@ -1353,6 +1478,39 @@ font-style: normal;
 }
 
 /* SERVICE END*/
+
+@media screen and (max-width: 768px) {
+  .navmobile{
+    display: block;
+    margin-right: -15px;
+  }
+   
+  #navmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top:110px;
+    right: -600px;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+    margin-right:5px ;
+    margin-top: -30px;
+  }
+  #navmenu.active{
+    right: 0px;
+  }
+ 
+.servicecontainer .service{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+}
 
 /* Contact Us start */
 .contact-container{

@@ -1,22 +1,4 @@
 
-@media screen and (max-width: 390px){
-    .power h1{
-        text-align: center;
-        font-size: 30px;
-        width: 350px;
-    }
-    .infosend input {
-      width: 110%;
-      padding: 8px;
-      margin-top: 12px;
-      height: 60px;
-    }
-    
-    
-    }
-
-
-
   @media screen and (max-width: 414px){
     
     .hero-products{
@@ -299,7 +281,9 @@
       margin-top: 70px;
     }
 
-    
+    .navlogo img{
+      margin-right: 60px;
+    }
     
     #navmenu{
       display: flex;
@@ -561,6 +545,26 @@
   
   }
 
+  @media screen and (max-width: 390px){
+    .navmobile{
+      display: block;
+      margin-right:255px ;
+    }
+      .power h1{
+          text-align: center;
+          font-size: 30px;
+          width: 350px;
+      }
+      .infosend input {
+        width: 110%;
+        padding: 8px;
+        margin-top: 12px;
+        height: 60px;
+      }
+      
+      
+      }
+
 
 
 
@@ -588,3 +592,31 @@
       height: 100px;
     }
   }
+
+
+  @media screen and (max-width: 360px){
+    .navmobile{
+      display: block;
+      margin-right:275px ;
+    }
+    .modal-content {
+      margin-bottom: 900px;
+
+    width: 340px;
+
+    margin-right: 360px;
+    }
+    .popupinquiry textarea{
+      font-family: sans-serif;
+      margin-top: 10px;
+      width: 290px;
+      height: 90px;
+    }
+    .infosend input {
+      width: 85%;
+      padding: 8px;
+      margin-top: 10px;
+      height: 40px;
+    }
+      
+      }
