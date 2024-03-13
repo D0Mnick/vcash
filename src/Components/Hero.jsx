@@ -31,15 +31,15 @@ function Hero() {
   return (
     <div id='hero' className="hero-products" data-aos="fade-down"   data-aos-duration="800">
         <div className="hero"> 
-        <div className='power'>
-        <p data-aos="fade-down"  data-aos-duration="800">Powered By</p>
-        <h1 data-aos="fade-down"  data-aos-duration="800">Get A Whole New Digital Experience</h1>
-        <h4 data-aos="fade-right"  data-aos-duration="800">Empower transactions, simply lives</h4>
-        </div>
+          <div className='power'>
+            <p data-aos="fade-down"  data-aos-duration="800">Powered By</p>
+            <h1 data-aos="fade-down"  data-aos-duration="800">Get A Whole New Digital Experience</h1>
+            <h4 data-aos="fade-right"  data-aos-duration="800">Empower transactions, simply lives</h4>
+          </div>
 
         <div className="herobutton">
-        <button onClick={openModal} className='herofeautures' data-aos="fade-right"  data-aos-duration="800">See Features</button>
-        {isOpen && (
+          <button onClick={openModal} className='herofeautures' data-aos="fade-right"  data-aos-duration="800">See Features</button>
+          {isOpen && (
         <div className="features">
           <div className="modal-features">
     
@@ -51,8 +51,6 @@ function Hero() {
         </div>
       )}
 
-
-        
         <button onClick={openModals} className='heroinquiry'   data-aos="fade-right"  data-aos-duration="800">Inquiry</button>
       {isOpens && (
         <div className="modal">
@@ -74,7 +72,9 @@ function Hero() {
             <div className='infosend'>
                 <h6>Email Address/Mobile No.</h6>
                 <input type="text" id="E-mail" name="email" />
-                <button><img src={inquiry} alt="" />Send</button>
+                <div>
+                  <button><img src={inquiry} alt="" />Send</button>
+                </div>
             </div>
           
            <h3 className='closetext'>Important Notice:All information given will be treated with the highest confidentially.It will solely be used for Vcash purposes only.</h3>
@@ -99,9 +99,7 @@ function Hero() {
 
           <img data-aos="fade-down"  data-aos-anchor="#example-anchor"
      data-aos-offset="500"
-     data-aos-duration="800"
-
-          src={vcash} alt="/" className='foreground-image' />
+     data-aos-duration="800" src={vcash} alt="/" className='foreground-image' />
         </div>
       
     </div>
