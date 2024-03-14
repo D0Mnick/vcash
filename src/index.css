@@ -1250,7 +1250,7 @@ font-style: normal;
 /* SERVICE END*/
 
 @media screen and (max-width: 768px) {
-  .navmobile{
+  /* .navmobile{
     display: block;
     margin-right: -15px;
   }
@@ -1275,7 +1275,7 @@ font-style: normal;
   #navmenu.active{
     right: 0px;
   }
- 
+  */
 .servicecontainer .service{
   display: grid;
   grid-template-columns: 1fr;
