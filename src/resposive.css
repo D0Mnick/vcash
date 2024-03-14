@@ -1,0 +1,50 @@
+/* Media queries for tablet devices */
+@media screen and (max-width: 768px) {
+    #navmenu {
+      width: 250px; /* Adjust width for tablets */
+      align-items: center;
+    }
+  
+    .modal-features,
+    .modal-content {
+      width: 280px; /* Adjust width for tablets */
+      margin-right: 0; /* Remove right margin for tablets */
+    }
+  
+    .modal-features img {
+      width: 250px; /* Adjust image width for tablets */
+    }
+  }
+  
+  /* Media queries for phone devices */
+  @media screen and (max-width: 480px) {
+    #navmenu {
+      width: 150px; /* Adjust width for phones */
+      padding: 20px 5px; /* Adjust padding for phones */
+    }
+  
+    .modal-features,
+    .modal-content {
+      width: 90%; /* Adjust width for phones */
+      margin-right: 0; /* Remove right margin for phones */
+    }
+  
+    .modal-features img {
+      width: 90%; /* Adjust image width for phones */
+    }
+  
+    .modal-features .closefeatures,
+    .popupinquiry .closequiry {
+      top: auto; /* Remove top position for close buttons on phones */
+      bottom: 10px; /* Set bottom position for close buttons on phones */
+      right: 5px; /* Adjust right position for close buttons on phones */
+      left: auto; /* Remove left position for close buttons on phones */
+    }
+  
+    .modal-features .closefeatures,
+    .popupinquiry .closequiry,
+    .popupinquiry .closetext {
+      font-size: 12px; /* Adjust font size for close buttons and text on phones */
+    }
+  }
+  
