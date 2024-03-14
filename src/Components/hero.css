@@ -1,4 +1,6 @@
 @media screen and (max-width: 414px){
+
+  /* @media screen and (min-width: 376px) and (max-width: 414px)  { */
   .nav{
     position: fixed;
     top: 0;
@@ -30,14 +32,18 @@
     justify-content: center;
     /* position: fixed; */
     top:108px;
-    right: -600px;
-    width: 180px;
+    /* right: -600px; */
+    width: 420px;
     height: 30vh;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
-    margin-right: 115px;
+    /* margin-right: 115px; */
+    left: 480px;
     
+  }
+  #navmenu.active{
+    left: 0px;
   }
   
   /* #navmenu li {
@@ -49,7 +55,7 @@
   
   #navmenu li{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     color: black;
     transition:0.3s ease-in-out ;
     cursor: pointer;
@@ -81,17 +87,29 @@
       }
       
       /* MODAL FEATURES START */
+      .features {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+      }
     
     
     .modal-features {
       background-color: #fff;
       padding: 20px;
       border-radius: 5px;
-      width: 380px;
+      width: 390px;
       height: 270px;
       position: relative;
       border-radius:20px ;
-      margin-right: 95px;
+      margin-right: 112px;
     
     }
     
@@ -160,7 +178,7 @@
       border-radius: 20px;
       width: 400px;
       height: 400px;
-      margin-right: 102px;
+      margin-right: 120px;
       margin-top: 200px;
      
     }
@@ -633,3 +651,610 @@ a{
 
 
   }
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 375px){
+
+    /* @media screen and (min-width: 376px) and (max-width: 414px)  { */
+    .nav{
+      /* position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color:#fff;
+      z-index: 4; */
+      width: 500px;
+    
+    }
+    #navmenu{
+      
+      left: 430px;
+      
+    }
+    #navmenu.active{
+      left: -24px;
+    }
+    /* NAV END */
+  
+  
+    /* HERO START MOBILE */
+  
+    .hero{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 450px;
+      margin-top: 2px;
+    }
+      .power h1{
+          text-align: center;
+          font-size: 32px;
+          width: 450px;
+        }
+        
+        /* MODAL FEATURES START */
+        .features {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 3;
+        }
+      
+      
+      .modal-features {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        width: 360px;
+        height: 270px;
+        position: relative;
+        border-radius:20px ;
+        margin-right: 150px;
+      
+      }
+      
+      .modal-features img{
+        width: 330px;
+        height: 380px;
+        object-fit: contain;
+        margin-top: -80px;
+        
+        
+      }
+       .modal-features  .closefeatures {
+        position: absolute;
+        top: 230px;
+        right: 140px;
+        padding: 8px 15px;
+        cursor: pointer;
+        
+        z-index: 1;
+        border-radius: 50px;
+        width: 100px;
+        outline: none;
+        border: none;
+        font-size: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background:white;
+        border: gray 1px solid;
+        color: gray ;
+      
+      }
+      .modal-features  .closefeatures:hover{
+        background-color: #448108;
+        color: aliceblue;
+      }
+      
+      /* MODAL FUTURES eND */
+      
+      
+      
+      /* MODAL INQUIRY START */
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+      }
+      
+      .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        width: 340px;
+        height: 400px;
+        margin-right: 170px;
+        margin-top: 200px;
+       
+      }
+     
+      .popupinquiry h2{
+        font-size: 16px;
+        color: #448108;
+        font-family: 'Times New Roman', Times, serif;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      
+      .popupinquiry .closequiry {
+        position: absolute;
+        top: 455px;
+        right: 120px;
+        padding: 8px 12px;
+        cursor: pointer;
+        z-index: 1;
+        border-radius: 50px;
+        width: 100px;
+        font-weight: 500;
+        outline: none;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        background:white;
+        border: gray 1px solid;
+        color: gray ;
+      }
+      
+      .popupinquiry .closetext {
+        
+        position: absolute;
+        top: 400px;
+        left: 10px;
+        z-index: 1;
+        width: 350px;
+        font-weight: 900;
+        outline: none;
+        font-size: 10px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #fff;
+        
+      }
+      .popupinquiry .closequiry:hover{
+        background-color: #448108;
+        color: aliceblue;
+      
+      }
+      
+      .penbox{
+        display: flex;
+        margin-top: 25px;
+        border: none;
+      }
+      .penbox img {
+        width: 13px;
+        height: 13px;
+       
+      }
+      
+      .penbox h5{
+        font-weight: 300;
+        font-family: sans-serif;
+      }
+      
+      .popupinquiry textarea{
+        font-family: sans-serif;
+        margin-top: 10px;
+        width: 300px;
+        height: 120px;
+      }
+      
+      .infosend{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .infosend h6{
+        font-weight: 300;
+        font-family: sans-serif;
+        margin-top: 10px;
+      }
+      
+      .infosend input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 10px;
+      }
+      .infosend div .message{
+      border: none;
+        cursor: pointer;
+        margin-top:10px;
+      background: #fff;
+      width: 100px;
+      
+      }
+      .infosend div .message:hover{
+      color: #42484e;
+      background: none;
+      }
+      
+      .infosend img{
+        width: 18px;
+        height: 18px;
+      
+      }
+      .modal-content h3{
+        font-weight: 800;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+      
+      /*media queries  end*/
+  
+      /* HERO END MOBILE */
+  
+  
+      /* ABOUT START */
+      .aboutcontainer{
+        background-image: url('../assets/background.png'); /* Path to your background image */
+        background-size: cover; /* Adjust as needed */
+        width: auto;
+        height: 900px;
+        width: 450px;
+        
+      }
+     
+      .aboutdetails{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .aboutdetails img{
+        width: 500px;
+        height:500px;
+        object-fit: contain;
+        margin-bottom: -80px;
+      }
+      
+      .aboutinfo{
+        vertical-align: text-top;
+       margin: 0px 0px 10px 105px;
+        
+      }
+      .aboutinfo h3{
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+      }
+      .aboutinfo h4{
+        font-weight: 400;
+        color: #63666A;
+        line-height: 40px;
+        width: 400px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+      }
+      
+      .aboutinfo button{
+        width: 150px;
+        padding: 10px 15px;
+        align-self: flex-end;
+        border-radius: 50px;
+        cursor: pointer;
+        color: #63666A;
+        margin-bottom: 60px;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background:white;
+        border:#63666A 1px solid;
+        margin-right: 130px;
+        margin-top: 10px;
+      }
+      .aboutinfo button:hover{
+        color: white;
+        background: #448108;
+      }
+  
+      /* modal start */
+      .about {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+      
+      .modal-about{
+        background-color: #fff;
+        padding: 20px;
+        width: 400px;
+        height: 550px;
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 20px;
+       margin-left: 7px;
+        z-index: 5;
+      }
+      
+      .modal-about h2{
+      font-family: 'Times New Roman', Times, serif;
+      color: #448108;
+      font-weight: 900;
+      margin-bottom: -50px;
+      font-size: 17px;
+      } 
+      
+      .modal-about  .close {
+        position: absolute;
+        top: 480px;
+        right: 5px;
+        padding: 8px 15px;
+        cursor: pointer;
+        z-index: 1;
+        border-radius: 50px;
+        color: #63666A;
+        outline: none;
+        font-weight: 400;
+        font-size: 17px;
+        border: gray 1px solid;
+        width: 130px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        background:white;
+        border:#63666A 1px solid;
+      }
+      
+      
+      .about-paragraph{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        line-height: 16px;
+        z-index: 5;
+        margin: 50px 50px;
+      }
+      
+      .about-paragraph p{
+        font-weight: 100;
+        font-size: 7px;
+        margin-top: 20px;
+        color: #1b1b1b;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      /* MODAL END */
+      /* about us end */
+  
+      /* ABOUT END */
+      
+  
+      /* SERVICE START */
+  .servicecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 230px;
+  }
+  
+  .servicecontainer h1{
+    font-size: 35px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+  }
+  
+  .servicecontainer .service{
+    display: grid;
+    grid-template-columns: 1fr;
+  
+  
+  }
+  .item{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .item:hover{
+    transform: scale(1.05);
+    transition: 0.6;
+  }
+  
+  .item img{
+    width: 80px;
+    height: 70px;
+    object-fit: contain;
+    margin-right: 70px;
+  
+  }
+  
+  .info{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    /* justify-content: space-between; */
+  }
+  
+  .info h4{
+    font-size: 16px;
+    margin-bottom: 1px;
+  color: #42484e;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-right: 50px;
+   
+  }
+  
+  .info p{
+    font-size: 12px;
+    color: #63666A;
+    line-height: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 10px;
+    width: 300px;
+  }
+  /* SERVICE END*/
+  /* Contact Us start */
+  .contact-container{
+    background-image: url('../assets/bg-contact.png'); /* Path to your background image */
+    background-size:  100% 100%;; 
+    background-repeat: no-repeat;
+    /* width: auto; */
+    height: 620px;
+    width: 410px;
+   
+  }
+  .contact-container .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .contact-container .contact h2{
+    margin-top: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  .contact-container .contact h4{
+    margin-top: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    font-size: 15px;
+  }
+  .contact-container .contact p{
+   color: #fff;
+   font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 10px;
+  }
+  
+  .contact-container .contact h5{
+    margin-top: 50px;
+    color: #fff;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+  }
+  
+  .contact-container .contact button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    width: 200px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: gray 1px solid;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+    outline: none;
+    /* border: none; */
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .contact-container .contact button:hover{
+    background: #448108;
+  }
+  
+  .logoqrx{
+    display: flex;
+    margin-top: 270px;
+  }
+  
+  .contact .logoqrx h3{
+  
+   color: #fff;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 18px;
+  }
+   .contact .logoqrx img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-left:5px ;
+  
+  }
+  .contact .logoqrx span{
+  color: #448108;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 18px;
+  
+  }
+  
+  
+  a{
+    list-style: none;
+  }
+  /* Contact Us end */
+  
+  
+    }
