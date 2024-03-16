@@ -161,11 +161,11 @@ body {
   
 }
 
-.herobutton{
+.herobuttons{
   display: flex;
   justify-content: space-between;
 }
- .herofeautures {
+ .herofeatures{
   padding: 15px 30px;
   border: none;
   border-radius: 50px;
@@ -183,14 +183,14 @@ body {
   font-style: normal;
 
 }
- .herofeautures:hover{
+ .herofeatures:hover{
   background-color: #448108;
   color: aliceblue;
 
 }
 
 /* MODAL FEATURES START */
-.features {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -203,23 +203,23 @@ body {
   z-index: 3;
 }
 
-.modal-features {
+.modal-content {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   width: 900px;
-  height: 500px;
+  height: 700px;
   position: relative;
   border-radius:20px ;
 }
 
-.modal-features img{
-  width: 850px;
+.modal-content img{
+  width: 750px;
   height: 480px;
   object-fit: contain;
   
 }
-.modal-features  .closefeatures {
+.modal-content .close {
   position: absolute;
   top: 445px;
   right: 350px;
@@ -242,7 +242,7 @@ body {
 
 }
 
-.modal-features   .closefeatures:hover{
+.modal-content   .close:hover{
   background-color: #448108;
   color: aliceblue;
 }
@@ -296,7 +296,7 @@ body {
   background-color: #fff;
   padding: 20px;
   width: 900px;
-  height: 410px;
+  height: 510px;
   position: relative;
   margin: auto;
   display: flex;
@@ -387,9 +387,11 @@ body {
   font-family: sans-serif;
 }
 
-.popupinquiry textarea{
+.modal-content textarea{
   font-family: sans-serif;
   margin-top: 10px;
+  height: 150px;
+  width: 450px;
 }
 
 .infosend{
