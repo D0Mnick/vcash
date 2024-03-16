@@ -666,6 +666,7 @@ a{
 
 
 @media screen and (max-width: 640px){
+ 
   .nav{
     position: fixed;
     top: 0;
@@ -738,14 +739,16 @@ a{
 
 
   /* HERO START MOBILE */
-
+.hero-products{
+  width: 580px;
+}
   .hero{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 580px;
+    width: 480px;
     margin-top: 5px;
-    margin-right: 150px;
+    margin-right: 80px;
   }
     .power h1{
         text-align: center;
@@ -777,6 +780,7 @@ a{
       position: relative;
       border-radius:20px ;
       margin-right: 112px;
+      top: 130px;
     
     }
     
@@ -1371,7 +1375,9 @@ a{
 
 
 
+  @media screen and (max-width: 496px){
 
+  }
 
 
 

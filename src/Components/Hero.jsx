@@ -38,11 +38,11 @@ function Hero() {
           </div>
 
         <div className="herobutton">
+          <div>
           <button onClick={openModal} className='herofeautures' data-aos="fade-right"  data-aos-duration="800">See Features</button>
           {isOpen && (
         <div className="features">
           <div className="modal-features">
-    
          <img src={features} alt="" />
     
             <button className="closefeatures" onClick={closeModal}>Back To Home</button>
@@ -50,7 +50,11 @@ function Hero() {
         
         </div>
       )}
+      </div>
 
+      
+
+      <div>
         <button onClick={openModals} className='heroinquiry'   data-aos="fade-right"  data-aos-duration="800">Inquiry</button>
       {isOpens && (
         <div className="modal">
@@ -85,6 +89,7 @@ function Hero() {
         </div>
         
       )}
+      </div>
 
         </div>
       
