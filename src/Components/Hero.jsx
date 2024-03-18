@@ -4,7 +4,7 @@ import vc from '../assets/VC@2x.png';
 import features from '../assets/features.png';
 import pen from '../assets/pen.png';
 import inquiry from '../assets/inquiry.png';
-import './hero.css'; // Import your CSS file here
+
 
 function Hero() {
   const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
@@ -61,7 +61,8 @@ function Hero() {
                   <input type="text" id="email" name="email" />
                   <button><img src={inquiry} alt="Send" />Send</button>
                 </div>
-                <h3 className="notice">Important Notice: All information will be treated with the highest confidentiality and used solely for Vcash purposes.</h3>
+                <h3 className="notice">Important Notice: All information will be treated with the highest 
+                confidentiality and used solely for Vcash purposes.</h3>
                 <button className="close" onClick={closeInquiryModal}>Close</button>
               </div>
             </div>

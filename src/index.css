@@ -19,6 +19,11 @@ body {
   
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
 /* NAV START */
 .nav{
   position: fixed;
@@ -34,7 +39,7 @@ body {
   align-items: center;
   justify-content: space-between;
   /* background: #1b2430; */
-  padding: 5px 80px;
+  padding: 5px 20px;
   box-shadow: transparent;
   cursor: pointer;
 }
@@ -121,9 +126,6 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 180px;
- width: 100%;
- 
- 
 }
 
 .hero{
@@ -190,7 +192,7 @@ body {
 }
 
 /* MODAL FEATURES START */
-.modal {
+/* .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -201,7 +203,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 3;
-}
+} */
 
 .modal-content {
   background-color: #fff;
@@ -214,7 +216,7 @@ body {
 }
 
 .modal-content img{
-  width: 750px;
+  width: 717px;
   height: 480px;
   object-fit: contain;
   
@@ -290,13 +292,14 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 3;
+  margin-inline:auto ;
 }
 
 .modal-content {
   background-color: #fff;
   padding: 20px;
   width: 900px;
-  height: 510px;
+  height: 400px;
   position: relative;
   margin: auto;
   display: flex;
@@ -351,17 +354,17 @@ body {
   color: gray ;
 }
 
-.popupinquiry .closetext {
+.modal .notice {
   
   position: absolute;
   top: 400px;
-  right: 30px;
+  right: -3px;
   z-index: 1;
   border-radius: 50px;
-  width: 820px;
+  width: 860px;
   font-weight: 900;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -449,8 +452,9 @@ background: #fff;
   top: 60px;
   right:10px;
   width: 150%;
-  height: 150%;
-  z-index: 1; /* lower z-index to place it behind */
+  min-height: 150%;
+  
+  z-index: 0; /* lower z-index to place it behind */
   /* background-image: url('VC@2X.jpg'); path to background image */
   background-size: cover; /* adjust as needed */
 }
@@ -463,7 +467,7 @@ background: #fff;
   object-fit: contain;
   position: absolute;
  
-  z-index: 2; /* higher z-index to place it in front */
+  z-index: 1; /* higher z-index to place it in front */
 }
 
 @-webkit-keyframes mover {
@@ -487,10 +491,10 @@ background: #fff;
 .aboutcontainer{
   background-image: url('./assets/background.png'); /* Path to your background image */
   background-size: cover; /* Adjust as needed */
-  width: auto;
-  height: 600px;
+  max-width: 100%;
+  min-height: 600px;
   margin-top: 220px;
-  
+  /* margin-inline:auto ; */
 }
 
 .aboutdetails{
@@ -568,7 +572,7 @@ MODAL START */
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  z-index: 2;
 }
 
 .modal-about{
@@ -584,6 +588,7 @@ MODAL START */
   align-items: center;
   justify-content: space-evenly;
   border-radius: 20px;
+
 }
 
 .modal-about h2{
@@ -649,7 +654,8 @@ margin-bottom: -50px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 80px 100px;
+  /* margin: 80px 100px; */
+  
 }
 
 .servicecontainer h1{
@@ -663,6 +669,8 @@ margin-bottom: -50px;
 .servicecontainer .service{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-inline:auto ;
+
 
 
 }
@@ -715,19 +723,12 @@ font-style: normal;
 
 /* SERVICE END*/
 
-@media screen and (max-width: 768px) {
-  
-.servicecontainer .service{
-  display: grid;
-  grid-template-columns: 1fr;
-}
-}
 
 /* Contact Us start */
 .contact-container{
   background-image: url('./assets/bg-contact.png'); /* Path to your background image */
   background-size: cover; /* Adjust as needed */
-  width: auto;
+  max-width: 100%;
   height: 800px;
  
 }
@@ -829,3 +830,831 @@ a{
   list-style: none;
 }
 /* Contact Us end */
+
+
+/* MEDEA QUIRIES START  */
+@media screen and (max-width: 1042px){
+
+  .nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    /* background-color: #fff; */
+    z-index: 4;
+    /* width: 75%; */
+    align-items: center;
+    margin-inline:auto ;
+
+  
+  }
+  .navlogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #1b2430; */
+    padding: 5px 80px;
+    box-shadow: transparent;
+    cursor: pointer;
+    margin-inline:auto ;
+  }
+
+  /* HERO START */
+
+  .hero-products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 180px;
+  margin-inline: auto;
+
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  margin-inline:auto ;
+  margin-top: 60px;
+}
+
+.power{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-inline:auto ;
+}
+
+.power  h1{
+  font-size: 60px;
+  width: 700px;
+text-align: center;
+}
+
+.power p {
+  font-weight: 100;
+  font-size: 20px;
+  color: grey;
+  
+}
+.power h4{
+  font-size: 20px;
+
+  margin-top: 10px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+.herobuttons{
+  display: flex;
+  justify-content: space-between;
+}
+ .herofeatures{
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  width: 250px;
+  background:white;
+  border: gray 1px solid;
+  color: gray ;;
+  cursor: pointer;
+  margin-top: 30px;
+  outline: none;
+  /* border: none; */
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+ .herofeatures:hover{
+  background-color: #448108;
+  color: aliceblue;
+
+}
+
+.aboutdetails{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline:auto ;
+
+  
+}
+
+/* Modal start for hero section */
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 900px;
+  height: 700px;
+  position: relative;
+  border-radius:20px ;
+  top: -400px;
+}
+
+.modal-content img{
+  width: 717px;
+  height: 480px;
+  object-fit: contain;
+  
+}
+.modal-content .close {
+  position: absolute;
+  top: 445px;
+  right: 350px;
+  padding: 15px 25px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50px;
+ 
+  width: 200px;
+  font-weight: 900;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background:white;
+  border: gray 1px solid;
+  color: gray ;
+
+}
+
+.modal-content   .close:hover{
+  background-color: #448108;
+  color: aliceblue;
+}
+
+/* MODAL FUTURES eND */
+
+
+
+ .heroinquiry {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background:white;
+  border: gray 1px solid;
+  color: gray ;
+
+}
+.hero-products .hero .heroinquiry:hover{
+  background-color: #448108;
+  color: aliceblue;
+}
+
+
+/* MODAL INQUIRY START */
+
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  margin-inline:auto ;
+
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 900px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  top: -400px;
+}
+.popupinquiry{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupinquiry h2{
+  font-size: 27px;
+  color: #448108;
+  font-family: 'Times New Roman', Times, serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+   
+}
+.popupinquiry .closequiry {
+  /* position: absolute;
+  top: 430px;
+  right: 380px;
+  padding: 10px 30px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 10px;
+  background: white;
+  color: gray; */
+
+  position: absolute;
+  top: 450px;
+  right: 350px;
+  padding: 15px 25px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50px;
+
+  width: 200px;
+  font-weight: 900;
+  outline: none;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background:white;
+  border: gray 1px solid;
+  color: gray ;
+}
+
+.modal .notice {
+  
+  position: absolute;
+  top: 400px;
+  right: -3px;
+  z-index: 1;
+  border-radius: 50px;
+  width: 860px;
+  font-weight: 900;
+  outline: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  
+}
+.popupinquiry .closequiry:hover{
+  background-color: #448108;
+  color: aliceblue;
+}
+
+.penbox{
+  display: flex;
+  margin-top: 25px;
+}
+.penbox img {
+  width: 13px;
+  height: 13px;
+}
+
+.penbox h5{
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+.modal-content textarea{
+  font-family: sans-serif;
+  margin-top: 10px;
+  height: 100px;
+  width: 290px;
+}
+
+.infosend{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px 0px;
+}
+.infosend h6{
+  font-weight: 300;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+.infosend input {
+  width: 240px;
+  padding: 8px;
+  margin-top: 10px;
+  height: 25px;
+}
+
+.infosend button{
+  border: none;
+  cursor: pointer;
+  margin-top:10px;
+background: #fff;
+
+}
+
+.infosend img{
+  width: 18px;
+  height: 18px;
+
+}
+
+
+.modal-content h3{
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  margin-top: 20px;
+ 
+}
+/* 
+MODAL END FOR HERO SECTION */
+
+/* ANIMATIOM IMAGE */
+
+.imgs {
+  position: relative;
+  width: 500px; /* adjust as needed */
+  height: 300px; /* adjust as needed */
+  margin-top: 40px;
+}
+ .background-image {
+  position: absolute;
+  top: 70px;
+  right:10px;
+  width: 140%;
+  min-height: 120%;
+  
+  z-index: 1; /* lower z-index to place it behind */
+  /* background-image: url('VC@2X.jpg'); path to background image */
+  background-size: cover; /* adjust as needed */
+}
+
+ .imgs .foreground-image {
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;
+  width: 480px;
+  height: 530px;
+  object-fit: contain;
+  position: absolute;
+ 
+  z-index: 2; /* higher z-index to place it in front */
+}
+/* HERO END */
+/* 
+ABOUT START */
+
+.aboutcontainer{
+  background-image: url('./assets/background.png'); /* Path to your background image */
+  background-size: cover; /* Adjust as needed */
+  max-width: 100%;
+  min-height: 600px;
+  margin-top: 220px;
+  
+  
+}
+
+.aboutdetails{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 150px;
+  margin-right: 250px;
+ margin-inline:auto ;
+
+}
+.aboutdetails img{
+  width: 650px;
+  height: 650px;
+  object-fit: contain;
+}
+
+.aboutinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+
+  justify-content: center;
+  top: -40px;
+
+
+}
+
+.aboutinfo h3{
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: -90px;
+
+
+}
+
+
+.aboutinfo h4{
+  font-weight: 400;
+  color: #63666A;
+  line-height: 40px;
+  width: 900px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  color: #d1c6c6;
+  text-align: center;
+
+
+}
+
+.aboutinfo button{
+  width: 200px;
+  padding: 15px 25px;
+  align-self: flex-end;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #63666A;
+
+  outline: none;
+  margin-right: 350px;
+  border: none;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background:white;
+  border:#63666A 1px solid;
+  margin-top: 15px;
+}
+.aboutinfo button:hover{
+  color: white;
+  background: #448108;
+}
+/* 
+MODAL START */
+.about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.modal-about{
+  background-color: #fff;
+  padding: 20px;
+  top: -300px;
+  width: 900px;
+  height: 520px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+
+.modal-about h2{
+font-family: 'Times New Roman', Times, serif;
+color: #448108;
+font-weight: 900;
+margin-bottom: -50px;
+} 
+
+
+
+.modal-about  .close {
+  position: absolute;
+  top: 445px;
+  right: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50px;
+  color: #63666A;
+  outline: none;
+  font-weight: 400;
+  font-size: 17px;
+  border: gray 1px solid;
+  width: 200px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background:white;
+  border:#63666A 1px solid;
+}
+
+
+.about-paragraph{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 21px;
+
+  margin: 50px 50px;
+}
+
+.about-paragraph p{
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #1b1b1b;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+/* MODAL END */
+
+/* ABOUT END */
+ 
+/* .servicecontainer .service{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+/* SERVICES STARTED */
+
+/* SERVICE START */
+.servicecontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+  /* margin: 80px 100px; */
+}
+
+.servicecontainer h1{
+  font-size: 35px;
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.servicecontainer .service{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+}
+.item{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.item:hover{
+  transform: scale(1.05);
+  transition: 0.6;
+}
+
+.item img{
+  width: 80px;
+  height: 70px;
+  object-fit: contain;
+
+}
+
+.info{
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+
+}
+
+.info h4{
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 1px;
+color: #42484e;
+font-family: "Roboto", sans-serif;
+font-weight: 600;
+font-style: normal;
+ 
+}
+
+.info p{
+  font-size: 12px;
+  color: #63666A;
+  line-height: 25px;
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 10px;
+  width: 300px;
+}
+
+/* SERVICE END*/
+
+/* Contact Us start */
+.contact-container{
+  background-image: url('./assets/bg-contact.png'); /* Path to your background image */
+  background-size: cover; /* Adjust as needed */
+  max-width: 100%;
+  height: 800px;
+ 
+}
+.contact-container .contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.contact-container .contact h2{
+  margin-top: 200px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 30px;
+}
+
+.contact-container .contact h4{
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  font-size: 20px;
+}
+.contact-container .contact p{
+ color: #fff;
+ font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.contact-container .contact h5{
+  margin-top: 50px;
+  color: #fff;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.contact-container .contact button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  width: 250px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border: gray 1px solid;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 30px;
+  outline: none;
+  /* border: none; */
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-container .contact button:hover{
+  background: #448108;
+}
+
+.logoqrx{
+  display: flex;
+  margin-top: 270px;
+}
+
+.contact .logoqrx h3{
+
+ color: #fff;
+font-size: 14px;
+font-family: "Roboto", sans-serif;
+font-weight: 600;
+font-style: normal;
+margin-top: 18px;
+}
+ .contact .logoqrx img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-left:5px ;
+
+}
+.contact .logoqrx span{
+color: #448108;
+font-size: 14px;
+font-family: "Roboto", sans-serif;
+font-weight: 600;
+font-style: normal;
+margin-top: 18px;
+
+}
+
+
+a{
+  list-style: none;
+}
+/* Contact Us end */
+
+
+}
+
+@media screen and (max-width: 991px){
+
+  /* .nav{
+    width:700px;
+    
+  } */
+  #navmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top:108px;
+    width: auto;
+    min-height: 40px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 100px 0 0 10px;
+    transition: 0.3s ease-in-out;
+    right: -700px;
+    background-color: black;
+    /* left: 30px; */
+   
+
+  }
+  #navmenu.active{
+    right: 0px;
+    border: 2px solid red;
+  }
+
+  #navmenu li{
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+   
+  .navmobile{
+    display: block;
+    font-size: 60px;
+    font-weight: 500;
+  }
+  .navlogo{
+    padding: 5px 20px;
+    margin-inline-end:auto ;
+  }
+  .navlogo img{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #1b2430; */
+    /* padding: 5px 80px; */
+    box-shadow: transparent;
+    cursor: pointer;
+  }
+    .navmobile{
+      display: block;
+      margin-right:130px ;
+    }
+    #navmenu{
+      margin-top: -25px;
+      
+    }
+    #navmenu li {
+      line-height: 30px;
+    }
+
+}

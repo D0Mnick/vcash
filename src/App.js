@@ -4,6 +4,7 @@ import Nav from './Components/Nav';
 import Hero from './Components/Hero';
 import Service from './Components/Service';
 import Contact from './Components/Contact';
+import Menu from './Components/Menu';
 
 
 
@@ -16,7 +17,7 @@ function App() {
       <About />
       <Service />
       <Contact />
- 
+     <Menu />
      
     </div>
   )

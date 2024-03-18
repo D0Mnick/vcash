@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import { TiThMenuOutline } from "react-icons/ti";
 import { FaTimes } from "react-icons/fa";
 import { useState } from 'react';
-import './hero.css'
+
 
 function Nav() {
   const [nav, setNav] = useState(true)
@@ -29,7 +29,6 @@ function Nav() {
             {!nav ?  <FaTimes style={{color:' #448108', fontSize: '30px'}} /> : <TiThMenuOutline  style={{color:'  #448108' , fontSize: '30px'}}/>}
 
 
-            
             </div>
         </div>
     </div>
