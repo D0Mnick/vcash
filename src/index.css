@@ -1990,7 +1990,7 @@ ABOUT START */
   align-items: center;
   /* margin-left: 150px;
   margin-right: 250px; */
- margin-inline:auto ;
+ 
 
 
 }
@@ -2340,10 +2340,7 @@ a{
   /* .nav{
     width: 80%;
   } */
-  .nav{
-  
-    width: 90%;
-  }
+ 
   
   .nav img{
     height: 40px;
@@ -2458,7 +2455,7 @@ a{
     }
     .modal-content .close {
       position: absolute;
-      top: 340px;
+      top: 335px;
       right: 130px;
       padding: 10px 20px;
       cursor: pointer;
@@ -2542,7 +2539,7 @@ a{
       align-items: center;
       justify-content: center;
       border-radius: 20px;
-      top: -200px;
+      top: -50px;
     }
     .popupinquiry{
       display: flex;

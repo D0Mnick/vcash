@@ -30,7 +30,7 @@ function Hero() {
     <div id="hero" className="hero-products">
       <div className="hero">
         <div className="power">
-          <p>Powered By</p>
+          <p>Making Your Future A Success</p>
           <h1>Get A Whole New Digital Experience</h1>
           <h4>Empower transactions, simplify lives</h4>
         </div>
