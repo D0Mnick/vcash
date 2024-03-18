@@ -12,12 +12,12 @@ import Menu from './Components/Menu';
 function App() {
   return (
     <div>
-      <Nav/>
+       <Menu />
       <Hero />
       <About />
       <Service />
       <Contact />
-     <Menu />
+    
      
     </div>
   )
