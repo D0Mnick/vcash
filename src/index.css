@@ -12,6 +12,7 @@ body {
     monospace;
 } */
 
+
 *{
   margin: 0px;
   padding: 0px;
@@ -45,6 +46,10 @@ li{
   font-weight: 500;
 }
 
+.container{
+  width: 100%;
+  margin: 0px auto;
+  }
 
  .nav{
   display: flex;
@@ -52,7 +57,7 @@ li{
   justify-content: space-between;
   height: 8vh;
   /* background: rgba(0, 28, 73); */
-  padding: 40px 40px;
+  padding: 20px 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -127,6 +132,8 @@ li{
 /* MEADIA QUERIES END */
 
 /* HERO START */
+
+
 
 .hero-products{
   display: flex;
@@ -1594,6 +1601,10 @@ a{
 }
 
 @media screen and (max-width: 768px) {
+  .container{
+    width: 768px;
+    margin: 0 auto;
+  }
 
   .nav{
 

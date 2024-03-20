@@ -1,0 +1,4 @@
+need container to not streacth use width 1400px and margin 0pxtop bottom and side is auto
+
+
+inline block to use margin top - sample - margin-right: 30px; margin-top: 10px; display: inline-block;

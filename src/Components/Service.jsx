@@ -4,6 +4,7 @@ import Items from './Items'
 
 function Service() {
   return (
+    <div className="container">
     <div id='services' className='servicecontainer'>
       <h1>We Provide</h1>
       <div className="service">
@@ -17,6 +18,7 @@ function Service() {
         })}
       </div>
 
+    </div>
     </div>
   )
 }

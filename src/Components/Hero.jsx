@@ -27,6 +27,7 @@ function Hero() {
   };
 
   return (
+    <div className="container">
     <div id="hero" className="hero-products">
       <div className="hero">
         <div className="power">
@@ -74,6 +75,7 @@ function Hero() {
         <img src={vc} alt="V" className="background-image" />
         <img src={vcash} alt="VCash" className="foreground-image" />
       </div>
+    </div>
     </div>
   );
 }

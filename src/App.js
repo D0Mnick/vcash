@@ -5,6 +5,7 @@ import Hero from './Components/Hero';
 import Service from './Components/Service';
 import Contact from './Components/Contact';
 import Menu from './Components/Menu';
+// import Form from './Components/Form';
 
 
 
@@ -17,7 +18,7 @@ function App() {
       <About />
       <Service />
       <Contact />
-    
+    {/* <Form/> */}
      
     </div>
   )

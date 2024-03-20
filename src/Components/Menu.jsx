@@ -19,6 +19,7 @@ const navToggle = () => {
 }
 const [toggleIcon, setToggleIcon] = useState('nav_toggler')
   return (
+    <div className="container">
   <nav className='nav'>
     <Link to='hero' smooth={true} duration={500}> <img src={logo} alt="" /></Link>
    <ul className={active}>
@@ -33,7 +34,7 @@ const [toggleIcon, setToggleIcon] = useState('nav_toggler')
        <div className='line3'></div>
    </div>
   </nav>
-
+  </div>
   );
 }
 

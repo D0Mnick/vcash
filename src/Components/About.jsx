@@ -14,6 +14,9 @@ function About() {
   };
 
   return (
+    <div className="container">
+
+  
     <div id='about'>
       <div className='aboutcontainer'>
         <div className="aboutdetails">
@@ -43,7 +46,7 @@ function About() {
         </div>
     </div>
     </div>
-    
+    </div>
   )
 }
 
